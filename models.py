@@ -48,7 +48,7 @@ def main():
             data=pd.read_csv(file_upload)
             data=data[['age','previous_year_rating','length_of_service','KPI_Met','awards_won']]
             data=data.dropna()
-            st.write(data)
+      
             predictions=classifier.predict(data)
             data['Prediction'] = predictions
             st.subheader("Find the Predicted Results below :")
