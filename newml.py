@@ -89,8 +89,9 @@ def main():
                 score=accuracy_score(y_test,y_pred)
                 from sklearn.metrics import confusion_matrix
                 c1=confusion_matrix(y_test,y_pred)
-                st.write("Confusion Matrix : ", c1)
                 st.write("Model Accuracy : ", score)
+                st.write("Confusion Matrix : ", c1)
+                
                 from sklearn.model_selection import cross_val_score
                 cv=cross_val_score(classifier,X_train, y_train,cv=5,scoring='accuracy')
                 st.write("Cross Calidation of Model : ", cv)
