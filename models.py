@@ -12,7 +12,7 @@ def main():
     """
     st.markdown(html_temp,unsafe_allow_html=True)
     from PIL import Image
-    image_loan=Image.open("C:/Users/pratik.anjay/Documents/ML practice/ml.jpg")
+    image_loan=Image.open("ml.jpg")
     st.sidebar.title("Pick Your Algorithm") 
     choose_model=st.sidebar.selectbox(label=' ',options=['Random Forest','Logistic Regression'])
     #st.sidebar.title("Auto Machine Learning") 
