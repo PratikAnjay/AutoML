@@ -15,7 +15,7 @@ def main():
     """
     st.markdown(html_temp,unsafe_allow_html=True)
     from PIL import Image
-    image_loan=Image.open("C:/Users/pratik.anjay/Documents/ML practice/ml4.jpg")
+    image_loan=Image.open("ml4.jpg")
     st.sidebar.title("Upload Input csv file : ")
     file_upload=st.sidebar.file_uploader(" ",type=["csv"])
     st.sidebar.image(image_loan,use_column_width=True) 
